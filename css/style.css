@@ -1,10 +1,14 @@
+/* COLOR VARIABLES ====================== */
 :root {
   --dark-blue: #363f5f;
+  --green-header: #2d4a22;
   --green: #49aa26;
+  --dark-green: #12a454;
   --light-green: #3dd705;
   --red: #e92929;
 }
 
+/* GENERAL CLASS ====================== */
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +41,7 @@ body {
   margin: 0 auto;
 }
 
+/* TITLES ====================== */
 h2 {
   margin-top: 3.2rem;
   margin-bottom: 0.8rem;
@@ -44,6 +49,7 @@ h2 {
   font-weight: normal;
 }
 
+/* LINKS AND BUTTONS ====================== */
 a {
   color: var(--green);
   text-decoration: none;
@@ -90,7 +96,7 @@ button:hover {
 
 /* HEADER ====================== */
 header {
-  background: #2d4a22;
+  background: var(--green-header);
   padding: 2rem 0 10rem;
   text-align: center;
 }
@@ -187,11 +193,11 @@ td.description {
 }
 
 td.income {
-  color: #12a454;
+  color: var(--dark-green);
 }
 
 td.expense {
-  color: #e92929;
+  color: var(--red);
 }
 
 /* MODAL ====================== */
