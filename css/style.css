@@ -332,4 +332,8 @@ footer {
   table tbody td:last-child img#update {
     margin-right: 1rem;
   }
+
+  #alert {
+    max-width: max-content;
+  }
 }
