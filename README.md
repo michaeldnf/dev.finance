@@ -9,7 +9,8 @@
 <p align="center">
   &nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-license">Licença</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 <br>
@@ -36,6 +37,11 @@ Alterações :
 
 - Agora é possível alterar as transações.
 - Foi adicionado alertas para mensagens de erro ou sucesso.
+
+
+## ⚖ Licença
+
+Este projeto está sob a licença do MIT. Veja o arquivo <a href="LICENSE">LICENSE</a> para mais detalhes.
 
 <br>
 
