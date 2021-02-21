@@ -35,6 +35,7 @@ O projeto foi feito pela Rocketseat através da maratona discover onde tive a op
 Alterações :
 
 - Agora é possível alterar as transações.
+- Foi adcionado alertas para mensagens de erro ou sucesso.
 
 <br>
 
