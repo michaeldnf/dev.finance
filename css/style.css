@@ -6,6 +6,7 @@
   --dark-green: #12a454;
   --light-green: #3dd705;
   --red: #e92929;
+  --svg: blue;
 }
 
 /* GENERAL CLASS ====================== */
@@ -198,6 +199,14 @@ td.income {
 
 td.expense {
   color: var(--red);
+}
+
+table tbody td:last-child img {
+  cursor: pointer;
+}
+
+table tbody td:last-child img#update {
+  margin-right: 1rem;
 }
 
 /* MODAL ====================== */
