@@ -153,6 +153,7 @@ header {
 
 #data-table {
   width: 100%;
+  min-width: 550px;
   border-spacing: 0 0.5rem;
   color: #969cb3;
 }
@@ -176,7 +177,7 @@ table thead th {
 
 table tbody td {
   background: #fff;
-  padding: 1rem 2rem;
+  padding: 0.8rem;
   font-weight: normal;
 }
 
@@ -202,10 +203,6 @@ td.expense {
 
 table tbody td:last-child img {
   cursor: pointer;
-}
-
-table tbody td:last-child img#update {
-  margin-right: 1rem;
 }
 
 /* MODAL ====================== */
@@ -288,5 +285,13 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
+  }
+
+  table tbody td {
+    padding: 1rem 2rem;
+  }
+
+  table tbody td:last-child img#update {
+    margin-right: 1rem;
   }
 }
