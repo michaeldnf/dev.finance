@@ -132,6 +132,50 @@ const Utils = {
   },
 };
 
+const Alert = {
+  direction: false,
+  duration: 3000,
+  createAlert(message, status) {
+    const mainContainer = document.querySelector('main.container');
+    const alert = document.createElement('div');
+    const classAlert = status === 'success' ? 'success' : 'error';
+
+    alert.id = 'alert';
+    alert.classList.add(classAlert);
+    alert.innerText = message;
+    mainContainer.appendChild(alert);
+
+    return alert;
+  },
+  removeAlert(alert) {
+    alert.remove();
+  },
+  toggleAlert(alert) {
+    alert.classList.remove('animation');
+    alert.offsetWidth = alert.offsetWidth;
+
+    if (this.direction) {
+      alert.style.animationDirection = 'reverse';
+      this.direction = !this.direction;
+    } else {
+      alert.style.animationDirection = '';
+      this.direction = !this.direction;
+    }
+
+    alert.classList.add('animation');
+  },
+  action(message, status) {
+    const alert = this.createAlert(message, status);
+    this.toggleAlert(alert);
+    setTimeout(() => {
+      this.toggleAlert(alert);
+    }, this.duration);
+    setTimeout(() => {
+      this.removeAlert(alert);
+    }, this.duration + 500);
+  },
+};
+
 const Form = {
   description: document.querySelector('#description'),
   amount: document.querySelector('#amount'),
@@ -154,7 +198,7 @@ const Form = {
     const values = this.getValues();
     values.forEach((value) => {
       if (value.trim() === '') {
-        throw new Error('Por favor preencha todos os campos');
+        throw new Error('Por favor preencha todos os campos!');
       }
     });
   },
@@ -181,6 +225,7 @@ const Form = {
     Form.setValues(index);
     Modal.toggle();
   },
+  direction: false,
   save(e) {
     e.preventDefault();
     try {
@@ -195,8 +240,9 @@ const Form = {
       Form.clearFields();
       Modal.toggle();
       App.reload();
+      Alert.action('Transação cadastrada com sucesso!', 'success');
     } catch (error) {
-      alert(error.message);
+      Alert.action(error.message, 'error');
     }
   },
   cancel(e) {

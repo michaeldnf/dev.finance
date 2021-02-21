@@ -267,6 +267,44 @@ input {
   width: 48%;
 }
 
+/* ALERTS ====================== */
+#alert {
+  position: fixed;
+  top: 50px;
+  padding: 1rem 2rem;
+  max-width: 270px;
+  color: #fff;
+  border-radius: 0.25rem 0 0 0.25rem;
+  z-index: 1000;
+  box-shadow: 2px 1px 13px 3px rgba(0, 0, 0, 0.25);
+}
+
+#alert.animation {
+  animation: alert 0.5s forwards;
+}
+
+#alert.success {
+  background: var(--dark-green);
+}
+
+#alert.error {
+  background: var(--red);
+}
+
+@keyframes alert {
+  from {
+    right: -380px;
+  }
+
+  80% {
+    right: 30px;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
 /* FOOTER ====================== */
 footer {
   text-align: center;
