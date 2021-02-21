@@ -4,8 +4,7 @@
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 <br>
@@ -28,5 +27,8 @@ O dev.finances é uma aplicação de controle financeiro, onde é possível cada
 
 O projeto foi feito pela Rocketseat através da maratona discover onde tive a oportunidade de aprender ainda mais e assim pude colaborar com algumas funcionalidades a mais 😉
 
+Alterações :
+
+- Agora é possível alterar as transações.
 
 Feito com ♥ by <a href="https://github.com/rocketseat-education">Rocketseat<a> e incrementado algumas funcionalidades por mim :wave:
